@@ -5,13 +5,13 @@ header {
 }
 
 button {
-	background-color: #4267d6;
-	border: none;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color: white;
 	font-size: 25px;
-	display: inline-block;
+	font-weight: bold;
+	background-color: #4267d6;
 	padding: 15px 32px;
-	font-family: helvetica;
+	border: none;
 	border-radius: 5px;
 }
 
@@ -19,12 +19,12 @@ button {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	display: inline-block;
 	font-size: 40px;
-	border-radius:5px;
 	padding: 4px 0px;
-	width: 300px;
+	width: 340px;
 	text-align: right;
 	letter-spacing: -1px;
 	color: #232323;
+	font-weight: bold;
 }
 
 .message {
@@ -36,25 +36,24 @@ button {
     padding-right: 19px;
     padding-bottom: 5px;
     margin-top: 9px;
-    margin-bottom: 0px;
 	font-size: 18px;
-	background-color: beige;
+	background-color: #f7f1de;
 	width: auto;
 	height: 30px;
 	border-radius:10px;
-	letter-spacing: -.5px;
+	font-weight: 200;
+
 
 }
 
+.highlight {
+	background-color: #6a9afc;
+	color: black;
+}
 
-
-.wrapper {
-	
+.wrapper {	
   margin:auto;
-  width: 50%;
+  width: 53%;
   text-align:left;
 }
 
-.p {
-  
-}

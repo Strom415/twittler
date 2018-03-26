@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="twittler.css">
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="moment.js"></script>
+    <script src="livestamp.js"></script>
   </head>
   <body>
 
@@ -17,18 +19,24 @@
       </ul>
     </header>
 
-<div class='wrapper'>
-  <p class='text'></p>
-</div>
+    <div class='wrapper'>
+      <p class='text'></p>
+    </div>
 
 
     <script>
 
       $(document).ready(function(){
 
-      
-        $('ul').on('click', "#all", function(){
+        $('ul').on('mouseenter', "button", function(){
+            $(this).addClass('highlight');
+        });
 
+        $('ul').on('mouseleave', "button", function(){
+            $(this).removeClass('highlight');
+        });
+
+        $('ul').on('click', "#all", function(){
           var index = streams.home.length - 1;
           $('p').html('');
         
@@ -46,7 +54,6 @@
         });
 
         $('ul').on('click', "#mrac", function(){
-
           var index = streams.users.mracus.length - 1;
           $('p').html('');
         
@@ -62,24 +69,60 @@
             index -= 1;
           }
         });
-        
-        
 
+        $('ul').on('click', "#shaw", function(){
+          var index = streams.users.shawndrost.length - 1;
+          $('p').html('');
+        
+          while(index >= 0){
+            var tweet = streams.users.shawndrost[index];
+            var $tweetUser = $("<span class='user'></span>");
+            var $tweetMessage = $("<span class='message'> </span>");
+            var $tweetTime = $("<div class='time'></div>");
+            $tweetUser.text('@' + tweet.user + ': ');
+            $tweetMessage.text(tweet.message);
+            $tweetTime.text(tweet.created_at);
+            $('p').append($tweetUser).append($tweetMessage).append($tweetTime);
+            index -= 1;
+          }
+        });
+
+        $('ul').on('click', "#shar", function(){
+          var index = streams.users.sharksforcheap.length - 1;
+          $('p').html('');
+        
+          while(index >= 0){
+            var tweet = streams.users.sharksforcheap[index];
+            var $tweetUser = $("<span class='user'></span>");
+            var $tweetMessage = $("<span class='message'> </span>");
+            var $tweetTime = $("<div class='time'></div>");
+            $tweetUser.text('@' + tweet.user + ': ');
+            $tweetMessage.text(tweet.message);
+            $tweetTime.text(tweet.created_at);
+            $('p').append($tweetUser).append($tweetMessage).append($tweetTime);
+            index -= 1;
+          }
+        });
+        
+        $('ul').on('click', "#doug", function(){
+          var index = streams.users.douglascalhoun.length - 1;
+          $('p').html('');
+        
+          while(index >= 0){
+            var tweet = streams.users.douglascalhoun[index];
+            var $tweetUser = $("<span class='user'></span>");
+            var $tweetMessage = $("<span class='message'> </span>");
+            var $tweetTime = $("<div class='time' ></div>");
+            $tweetUser.text('@' + tweet.user + ': ');
+            $tweetMessage.text(tweet.message);
+            $tweetTime.text(tweet.created_at);
+            $('p').append($tweetUser).append($tweetMessage).append($tweetTime);
+            index -= 1;
+          }
+        });
+    
       });
 
     </script>
   </body>
 </html>
-
-<!--
-users is an array of strings ['mracus', 'shawndrost', 'a']
-//streams in and object with two properties
-{
-  users: {
-          mracus: ['tweeta', 'tweetb'],
-          shawndrost: ['tweetc', 'tweetd']
-         }
-  home: ['tweet1', 'tweet2', 'tweet3']
-}
-//streams is periodically updated with newly generated data
--->
