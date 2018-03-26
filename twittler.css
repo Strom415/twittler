@@ -9,10 +9,10 @@ button {
 	color: white;
 	font-size: 25px;
 	font-weight: bold;
-	background-color: #4267d6;
+	background-color: tomato;
 	padding: 15px 32px;
-	border: none;
 	border-radius: 5px;
+	outline:none;
 }
 
 .user { 
@@ -34,20 +34,30 @@ button {
     padding-top: 15px;
     padding-left: 19px;
     padding-right: 19px;
-    padding-bottom: 5px;
-    margin-top: 9px;
-	font-size: 18px;
+    padding-bottom: 12px;
+    margin-top: 10px;
+	font-size: 22px;
 	background-color: #f7f1de;
 	width: auto;
 	height: 30px;
 	border-radius:10px;
 	font-weight: 200;
+}
 
+.time {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 20px;
+	text-align: right;
+	width: 335px;
+	height: 20px;
+	color: #262525;
+	position: relative;
+	bottom: 10px;
 
 }
 
 .highlight {
-	background-color: #6a9afc;
+	background-color: #e57e7e;
 	color: black;
 }
 
