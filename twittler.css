@@ -1,0 +1,60 @@
+header {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+	background-color: #4267d6;
+	border: none;
+	color: white;
+	font-size: 25px;
+	display: inline-block;
+	padding: 15px 32px;
+	font-family: helvetica;
+	border-radius: 5px;
+}
+
+.user { 
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	display: inline-block;
+	font-size: 40px;
+	border-radius:5px;
+	padding: 4px 0px;
+	width: 300px;
+	text-align: right;
+	letter-spacing: -1px;
+	color: #232323;
+}
+
+.message {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	position: absolute;
+    left: 700px;
+    padding-top: 15px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-bottom: 5px;
+    margin-top: 9px;
+    margin-bottom: 0px;
+	font-size: 18px;
+	background-color: beige;
+	width: auto;
+	height: 30px;
+	border-radius:10px;
+	letter-spacing: -.5px;
+
+}
+
+
+
+.wrapper {
+	
+  margin:auto;
+  width: 50%;
+  text-align:left;
+}
+
+.p {
+  
+}
